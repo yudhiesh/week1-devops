@@ -10,7 +10,7 @@ def test_sub():
 
 
 def test_mul():
-    assert mul(1, 1) == 0
+    assert mul(1, 1) == 1
 
 
 def test_div():
