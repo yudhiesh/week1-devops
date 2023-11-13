@@ -30,7 +30,7 @@ jobs:
           python -m pytest -v --cov=src --cov-report=xml tests/
 
       - name: Pytest Coverage Comment
-        uses: AbdullahMu/week1-devops
+        uses: codecov/codecov-action@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           coverage-path: coverage.xml
