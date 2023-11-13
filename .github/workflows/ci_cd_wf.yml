@@ -32,5 +32,4 @@ jobs:
       - name: Pytest Coverage Comment
         uses: codecov/codecov-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           coverage-path: coverage.xml
