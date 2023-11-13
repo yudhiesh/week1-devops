@@ -4,12 +4,10 @@ from src.calculator import add, div, mul, sub
 def test_add():
     assert add(1,1) == 2
 
-# GithHub Actions -> jobs ubuntu latest - operating system 
-# ls -la -> lists all the files in folder -> ls -l only files 
 
 def test_sub():
     assert sub(1, 1) == 0
-
+ 
 
 def test_mul():
     assert mul(1, 1) == 1
