@@ -26,10 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest pytest-cov
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-            
-      - name: Run tests
-        run: |
-          python -m pytest -v tests
 
       - name: Build coverage file
         run: |
@@ -40,3 +36,7 @@ jobs:
         with:
           pytest-coverage-path: ./pytest-coverage.txt
           junitxml-path: ./pytest.xml
+      
+      - name: Run tests
+        run: |
+          python -m pytest -v tests
